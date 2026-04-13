@@ -17,5 +17,9 @@ namespace Zadanie2.Models
         {
             return new List<Reserv>(_rezerwacje);
         }
+        public void Clear()
+        {
+            _rezerwacje.Clear();
+        }
     }
 }

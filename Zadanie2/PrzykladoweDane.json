@@ -1,0 +1,147 @@
+{
+  "Wydzialy": [
+    {
+      "Id": 0,
+      "Nazwa": "Matematyki Stosowanej",
+      "AdresWydzialu": {
+        "Ulica": "Kaszubska",
+        "Nr": "24",
+        "Miejscowosc": "Gliwice"
+      }
+    },
+    {
+      "Id": 0,
+      "Nazwa": "AEI",
+      "AdresWydzialu": {
+        "Ulica": "Akademicka",
+        "Nr": "1",
+        "Miejscowosc": "Gliwice"
+      }
+    }
+  ],
+  "Sale": [
+    {
+      "Id": "9053382a-5bc7-4c2b-876f-b45d1721cd71",
+      "NumerSali": "301",
+      "InnaNazwa": "Sala 301",
+      "Pojemnosc": 24,
+      "Wydzial": {
+        "Id": 0,
+        "Nazwa": "Matematyki Stosowanej",
+        "AdresWydzialu": {
+          "Ulica": "Kaszubska",
+          "Nr": "24",
+          "Miejscowosc": "Gliwice"
+        }
+      },
+      "TypSali": 0,
+      "Adres": null
+    },
+    {
+      "Id": "51365533-1139-4e0c-82d7-975134911fa7",
+      "NumerSali": "415",
+      "InnaNazwa": "Duza sala",
+      "Pojemnosc": 10,
+      "Wydzial": {
+        "Id": 0,
+        "Nazwa": "AEI",
+        "AdresWydzialu": {
+          "Ulica": "Akademicka",
+          "Nr": "1",
+          "Miejscowosc": "Gliwice"
+        }
+      },
+      "TypSali": 0,
+      "Adres": null
+    },
+    {
+      "Id": "f83c3b3a-f2c5-4c68-bfbd-2fce4386d27a",
+      "NumerSali": "21",
+      "InnaNazwa": "Aula A",
+      "Pojemnosc": 120,
+      "Wydzial": {
+        "Id": 0,
+        "Nazwa": "AEI",
+        "AdresWydzialu": {
+          "Ulica": "Akademicka",
+          "Nr": "1",
+          "Miejscowosc": "Gliwice"
+        }
+      },
+      "TypSali": 1,
+      "Adres": null
+    }
+  ],
+  "Prowadzacy": [
+    {
+      "Id": 0,
+      "Imie": "Adam",
+      "Nazwisko": "Nowak",
+      "Stopien": 6
+    },
+    {
+      "Id": 0,
+      "Imie": "Jan",
+      "Nazwisko": "Kowalski",
+      "Stopien": 8
+    }
+  ],
+  "Rezerwacje": [
+    {
+      "Id": "fe1e35ef-4543-4343-9406-d84cdb7ffb76",
+      "poczatekRezerwacji": "2026-04-13T12:00:16.827",
+      "koniecRezerwacji": "2026-04-13T14:00:16.823",
+      "Sala": {
+        "Id": "51365533-1139-4e0c-82d7-975134911fa7",
+        "NumerSali": "415",
+        "InnaNazwa": "Duza sala",
+        "Pojemnosc": 10,
+        "Wydzial": {
+          "Id": 0,
+          "Nazwa": "AEI",
+          "AdresWydzialu": {
+            "Ulica": "Akademicka",
+            "Nr": "1",
+            "Miejscowosc": "Gliwice"
+          }
+        },
+        "TypSali": 0,
+        "Adres": null
+      },
+      "Prowadzacy": {
+        "Id": 0,
+        "Imie": "Adam",
+        "Nazwisko": "Nowak",
+        "Stopien": 6
+      }
+    },
+    {
+      "Id": "8370a02a-9509-45ba-993d-734a4b19a0af",
+      "poczatekRezerwacji": "2026-04-14T16:00:16.827",
+      "koniecRezerwacji": "2026-04-14T18:00:16.823",
+      "Sala": {
+        "Id": "f83c3b3a-f2c5-4c68-bfbd-2fce4386d27a",
+        "NumerSali": "21",
+        "InnaNazwa": "Aula A",
+        "Pojemnosc": 120,
+        "Wydzial": {
+          "Id": 0,
+          "Nazwa": "AEI",
+          "AdresWydzialu": {
+            "Ulica": "Akademicka",
+            "Nr": "1",
+            "Miejscowosc": "Gliwice"
+          }
+        },
+        "TypSali": 1,
+        "Adres": null
+      },
+      "Prowadzacy": {
+        "Id": 0,
+        "Imie": "Jan",
+        "Nazwisko": "Kowalski",
+        "Stopien": 8
+      }
+    }
+  ]
+}

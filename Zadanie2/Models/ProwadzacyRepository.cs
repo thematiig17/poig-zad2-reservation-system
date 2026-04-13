@@ -17,5 +17,9 @@ namespace Zadanie2.Models
         {
             return new List<Prowadzacy>(_prowadzacy);
         }
+        public void Clear()
+        {
+            _prowadzacy.Clear();
+        }
     }
 }

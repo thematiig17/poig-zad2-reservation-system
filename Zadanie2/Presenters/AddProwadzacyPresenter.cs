@@ -49,7 +49,7 @@ namespace Zadanie2.Presenters
 
             _view.ShowMessage("Prowadzacy dodany!");
         }
-        private void UpdateListView()
+        public void UpdateListView()
         {
             _view.OdswiezListeProwadzacych(_repository.GetAll());
         }

@@ -17,5 +17,9 @@ namespace Zadanie2.Models
         {
             return new List<Wydzial>(_wydzialy);
         }
+        public void Clear()
+        {
+            _wydzialy.Clear();
+        }
     }
 }

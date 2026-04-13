@@ -17,5 +17,9 @@ namespace Zadanie2.Models
         {
             return new List<Sala>(_sale);
         }
+        public void Clear()
+        {
+            _sale.Clear();
+        }
     }
 }

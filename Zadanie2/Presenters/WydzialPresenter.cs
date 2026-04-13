@@ -49,7 +49,7 @@ namespace Zadanie2.Presenters
 
             _view.ShowMessage("Wydział dodany!");
         }
-        private void UpdateListView()
+        public void UpdateListView()
         {
             _view.OdswiezListeWydzialow(_repository.GetAll());
         }
