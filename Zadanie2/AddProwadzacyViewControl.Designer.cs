@@ -31,7 +31,7 @@
             listaProwadzacych_listBox = new ListBox();
             tytulNaukowy_comboBox = new ComboBox();
             label12 = new Label();
-            button3 = new Button();
+            dodajProwadzacego_button = new Button();
             nazwisko_textBox = new TextBox();
             imie_textBox = new TextBox();
             label9 = new Label();
@@ -66,15 +66,15 @@
             label12.TabIndex = 50;
             label12.Text = "Tytuł naukowy";
             // 
-            // button3
+            // dodajProwadzacego_button
             // 
-            button3.Font = new Font("Epilogue Medium", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(402, 98);
-            button3.Name = "button3";
-            button3.Size = new Size(355, 81);
-            button3.TabIndex = 49;
-            button3.Text = "Dodaj prowadzącego";
-            button3.UseVisualStyleBackColor = true;
+            dodajProwadzacego_button.Font = new Font("Epilogue Medium", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dodajProwadzacego_button.Location = new Point(402, 98);
+            dodajProwadzacego_button.Name = "dodajProwadzacego_button";
+            dodajProwadzacego_button.Size = new Size(355, 81);
+            dodajProwadzacego_button.TabIndex = 49;
+            dodajProwadzacego_button.Text = "Dodaj prowadzącego";
+            dodajProwadzacego_button.UseVisualStyleBackColor = true;
             // 
             // nazwisko_textBox
             // 
@@ -131,7 +131,7 @@
             Controls.Add(listaProwadzacych_listBox);
             Controls.Add(tytulNaukowy_comboBox);
             Controls.Add(label12);
-            Controls.Add(button3);
+            Controls.Add(dodajProwadzacego_button);
             Controls.Add(nazwisko_textBox);
             Controls.Add(imie_textBox);
             Controls.Add(label9);
@@ -148,7 +148,7 @@
         private ListBox listaProwadzacych_listBox;
         private ComboBox tytulNaukowy_comboBox;
         private Label label12;
-        private Button button3;
+        private Button dodajProwadzacego_button;
         private TextBox nazwisko_textBox;
         private TextBox imie_textBox;
         private Label label9;

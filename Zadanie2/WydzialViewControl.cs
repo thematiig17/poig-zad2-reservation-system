@@ -42,8 +42,6 @@ namespace Zadanie2
             listaWydzialow_listBox.Items.Clear();
             foreach (var wydzial in listaWydzialow)
             {
-                // Możesz nadpisać metodę ToString() w klasie Wydzial, 
-                // żeby tu ładnie wyglądało, np: "Wydzial AEI (ul. Akademicka 16, Gliwice)"
                 listaWydzialow_listBox.Items.Add($"{wydzial.Nazwa} - {wydzial.AdresWydzialu.Miejscowosc}, {wydzial.AdresWydzialu.Ulica} {wydzial.AdresWydzialu.Nr}");
             }
         }

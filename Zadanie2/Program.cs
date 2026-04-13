@@ -17,8 +17,11 @@ namespace Zadanie2
 
             WydzialRepository wydzialRepository = new WydzialRepository();
             SalaRepository salaRepository = new SalaRepository();
+            ProwadzacyRepository prowadzacyRepository = new ProwadzacyRepository();
+            ReservRepository reservRepository = new ReservRepository();
 
-            Form1 view = new Form1(wydzialRepository, salaRepository);
+
+            Form1 view = new Form1(wydzialRepository, salaRepository, prowadzacyRepository, reservRepository);
 
             Application.Run(view);
         }

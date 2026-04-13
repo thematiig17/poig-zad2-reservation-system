@@ -34,6 +34,7 @@
             dodajSale_tabPage = new TabPage();
             addRoomViewControl1 = new AddRoomViewControl();
             dodajProwadzacego_tabPage = new TabPage();
+            addProwadzacyViewControl1 = new AddProwadzacyViewControl();
             wszystkieSale_tabPage = new TabPage();
             allRoomViewControl1 = new AllRoomViewControl();
             wszystkieRezerwacje_tabPage = new TabPage();
@@ -41,9 +42,11 @@
             wydzialy_tabPage = new TabPage();
             wydzialViewControl1 = new WydzialViewControl();
             label1 = new Label();
+            saveLoadButtons1 = new SaveLoadButtons();
             tabControl1.SuspendLayout();
             rezerwacjaSali_tabPage.SuspendLayout();
             dodajSale_tabPage.SuspendLayout();
+            dodajProwadzacego_tabPage.SuspendLayout();
             wszystkieSale_tabPage.SuspendLayout();
             wszystkieRezerwacje_tabPage.SuspendLayout();
             wydzialy_tabPage.SuspendLayout();
@@ -104,11 +107,20 @@
             // dodajProwadzacego_tabPage
             // 
             dodajProwadzacego_tabPage.BackColor = Color.DimGray;
+            dodajProwadzacego_tabPage.Controls.Add(addProwadzacyViewControl1);
             dodajProwadzacego_tabPage.Location = new Point(4, 24);
             dodajProwadzacego_tabPage.Name = "dodajProwadzacego_tabPage";
             dodajProwadzacego_tabPage.Size = new Size(828, 564);
             dodajProwadzacego_tabPage.TabIndex = 2;
             dodajProwadzacego_tabPage.Text = "Nowy prowadzący";
+            // 
+            // addProwadzacyViewControl1
+            // 
+            addProwadzacyViewControl1.BackColor = Color.DimGray;
+            addProwadzacyViewControl1.Location = new Point(0, -3);
+            addProwadzacyViewControl1.Name = "addProwadzacyViewControl1";
+            addProwadzacyViewControl1.Size = new Size(828, 564);
+            addProwadzacyViewControl1.TabIndex = 0;
             // 
             // wszystkieSale_tabPage
             // 
@@ -174,12 +186,21 @@
             label1.TabIndex = 1;
             label1.Text = " System rezerwacji sal - Mateusz Grabowski - Politechnika Śląska";
             // 
+            // saveLoadButtons1
+            // 
+            saveLoadButtons1.BackColor = Color.Transparent;
+            saveLoadButtons1.Location = new Point(625, 603);
+            saveLoadButtons1.Name = "saveLoadButtons1";
+            saveLoadButtons1.Size = new Size(224, 32);
+            saveLoadButtons1.TabIndex = 2;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCoral;
             ClientSize = new Size(861, 634);
+            Controls.Add(saveLoadButtons1);
             Controls.Add(label1);
             Controls.Add(tabControl1);
             Name = "Form1";
@@ -187,6 +208,7 @@
             tabControl1.ResumeLayout(false);
             rezerwacjaSali_tabPage.ResumeLayout(false);
             dodajSale_tabPage.ResumeLayout(false);
+            dodajProwadzacego_tabPage.ResumeLayout(false);
             wszystkieSale_tabPage.ResumeLayout(false);
             wszystkieRezerwacje_tabPage.ResumeLayout(false);
             wydzialy_tabPage.ResumeLayout(false);
@@ -209,5 +231,7 @@
         private AllReservViewControl allReservViewControl1;
         private AllRoomViewControl allRoomViewControl1;
         private AddReservViewControl addReservViewControl1;
+        private AddProwadzacyViewControl addProwadzacyViewControl1;
+        private SaveLoadButtons saveLoadButtons1;
     }
 }

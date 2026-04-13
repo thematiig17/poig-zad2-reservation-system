@@ -31,7 +31,7 @@
             koniec_dateTime = new DateTimePicker();
             poczatek_dateTime = new DateTimePicker();
             label6 = new Label();
-            button1 = new Button();
+            dodajRezerwacje_button = new Button();
             wybranyProwadzacy_comboBox = new ComboBox();
             label5 = new Label();
             wybranaSala_comboBox = new ComboBox();
@@ -42,16 +42,20 @@
             // 
             // koniec_dateTime
             // 
+            koniec_dateTime.CustomFormat = "dd/MM/yyyy HH:mm";
+            koniec_dateTime.Format = DateTimePickerFormat.Custom;
             koniec_dateTime.Location = new Point(247, 113);
             koniec_dateTime.Name = "koniec_dateTime";
-            koniec_dateTime.Size = new Size(200, 23);
+            koniec_dateTime.Size = new Size(182, 23);
             koniec_dateTime.TabIndex = 20;
             // 
             // poczatek_dateTime
             // 
+            poczatek_dateTime.CustomFormat = "dd/MM/yyyy HH:mm";
+            poczatek_dateTime.Format = DateTimePickerFormat.Custom;
             poczatek_dateTime.Location = new Point(247, 70);
             poczatek_dateTime.Name = "poczatek_dateTime";
-            poczatek_dateTime.Size = new Size(200, 23);
+            poczatek_dateTime.Size = new Size(182, 23);
             poczatek_dateTime.TabIndex = 19;
             // 
             // label6
@@ -65,22 +69,22 @@
             label6.TabIndex = 18;
             label6.Text = "Koniec rezerwacji";
             // 
-            // button1
+            // dodajRezerwacje_button
             // 
-            button1.Font = new Font("Epilogue Medium", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(13, 252);
-            button1.Name = "button1";
-            button1.Size = new Size(355, 81);
-            button1.TabIndex = 17;
-            button1.Text = "Dokonaj rezerwacji";
-            button1.UseVisualStyleBackColor = true;
+            dodajRezerwacje_button.Font = new Font("Epilogue Medium", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dodajRezerwacje_button.Location = new Point(13, 252);
+            dodajRezerwacje_button.Name = "dodajRezerwacje_button";
+            dodajRezerwacje_button.Size = new Size(355, 81);
+            dodajRezerwacje_button.TabIndex = 17;
+            dodajRezerwacje_button.Text = "Dokonaj rezerwacji";
+            dodajRezerwacje_button.UseVisualStyleBackColor = true;
             // 
             // wybranyProwadzacy_comboBox
             // 
             wybranyProwadzacy_comboBox.FormattingEnabled = true;
             wybranyProwadzacy_comboBox.Location = new Point(247, 198);
             wybranyProwadzacy_comboBox.Name = "wybranyProwadzacy_comboBox";
-            wybranyProwadzacy_comboBox.Size = new Size(121, 23);
+            wybranyProwadzacy_comboBox.Size = new Size(358, 23);
             wybranyProwadzacy_comboBox.TabIndex = 16;
             // 
             // label5
@@ -99,7 +103,7 @@
             wybranaSala_comboBox.FormattingEnabled = true;
             wybranaSala_comboBox.Location = new Point(247, 154);
             wybranaSala_comboBox.Name = "wybranaSala_comboBox";
-            wybranaSala_comboBox.Size = new Size(121, 23);
+            wybranaSala_comboBox.Size = new Size(358, 23);
             wybranaSala_comboBox.TabIndex = 14;
             // 
             // label4
@@ -143,7 +147,7 @@
             Controls.Add(koniec_dateTime);
             Controls.Add(poczatek_dateTime);
             Controls.Add(label6);
-            Controls.Add(button1);
+            Controls.Add(dodajRezerwacje_button);
             Controls.Add(wybranyProwadzacy_comboBox);
             Controls.Add(label5);
             Controls.Add(wybranaSala_comboBox);
@@ -161,7 +165,7 @@
         private DateTimePicker koniec_dateTime;
         private DateTimePicker poczatek_dateTime;
         private Label label6;
-        private Button button1;
+        private Button dodajRezerwacje_button;
         private ComboBox wybranyProwadzacy_comboBox;
         private Label label5;
         private ComboBox wybranaSala_comboBox;
