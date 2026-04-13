@@ -21,5 +21,14 @@ namespace Zadanie2.Models
         {
             _rezerwacje.Clear();
         }
+
+        public bool CzySalaZajeta(Guid idSali, DateTime nowyPoczatek, DateTime nowyKoniec)
+        {
+            return _rezerwacje.Any(r =>
+                r.Sala.Id == idSali &&
+                r.poczatekRezerwacji < nowyKoniec &&
+                r.koniecRezerwacji > nowyPoczatek
+            );
+        }
     }
 }

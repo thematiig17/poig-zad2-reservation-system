@@ -47,7 +47,7 @@
             wczytaj_button.Name = "wczytaj_button";
             wczytaj_button.Size = new Size(105, 23);
             wczytaj_button.TabIndex = 1;
-            wczytaj_button.Text = "Wczytaj do pliku";
+            wczytaj_button.Text = "Wczytaj z pliku";
             wczytaj_button.UseVisualStyleBackColor = true;
             // 
             // SaveLoadButtons

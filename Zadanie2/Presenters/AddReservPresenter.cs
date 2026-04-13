@@ -57,7 +57,12 @@ namespace Zadanie2.Presenters
                 _view.ShowMessage("Proszę wybrać prowadzącego.");
                 return;
             }
-
+            bool jestKonflikt = _reservRepository.CzySalaZajeta(sala.Id, poczatek, koniec);
+            if (jestKonflikt)
+            {
+                _view.ShowMessage($"{sala.NumerSali} jest już zajęta w tym terminie! Wybierz inne godziny.");
+                return;
+            }
             Reserv rezerwacja = new Reserv
             {
                 poczatekRezerwacji = poczatek,

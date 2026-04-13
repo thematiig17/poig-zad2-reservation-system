@@ -14,7 +14,9 @@ namespace Zadanie2.Models
 
         public override string ToString()
         {
-            return $"Rezerwacja: {Sala.NumerSali} - od {poczatekRezerwacji} do {koniecRezerwacji}, Prowadzący: {Prowadzacy.Imie} {Prowadzacy.Nazwisko}";
+            string start = poczatekRezerwacji.ToString("dd.MM.yyyy HH:mm");
+            string koniec = koniecRezerwacji.ToString("dd.MM.yyyy HH:mm");
+            return $"Rezerwacja sali {Sala.NumerSali} - od {start} do {koniec}, Prowadzący: {Prowadzacy.Imie} {Prowadzacy.Nazwisko}";
         }
     }
 }
