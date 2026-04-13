@@ -13,6 +13,7 @@ namespace Zadanie2
         private readonly AddProwadzacyPresenter _addProwadzacyPresenter;
         private readonly AddReservPresenter _addReservPresenter;
         private readonly SaveLoadButtonsPresenter _saveLoadButtonsPresenter;
+        private readonly AllReservPresenter _allReservPresenter;
         public Form1(WydzialRepository wydzialRepository, SalaRepository salaRepository, ProwadzacyRepository prowadzacyRepository, ReservRepository reservRepository)
         {
             InitializeComponent();
@@ -40,6 +41,10 @@ namespace Zadanie2
                 {
                     _wydzialPresenter.UpdateListView();
                 }
+                else if (tabControl1.SelectedTab == wszystkieRezerwacje_tabPage)
+                {
+                    _allReservPresenter.OdswiezListe();
+                }
 
             };
 
@@ -50,6 +55,7 @@ namespace Zadanie2
             _addProwadzacyPresenter = new AddProwadzacyPresenter(addProwadzacyViewControl1, prowadzacyRepository);
             _addReservPresenter = new AddReservPresenter(addReservViewControl1, salaRepository, prowadzacyRepository, reservRepository);
             _saveLoadButtonsPresenter = new SaveLoadButtonsPresenter(saveLoadButtons1, salaRepository, wydzialRepository, prowadzacyRepository, reservRepository);
+            _allReservPresenter = new AllReservPresenter(allReservViewControl1, reservRepository);
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)

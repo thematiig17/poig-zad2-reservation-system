@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBox2 = new ListBox();
+            listaRezerwacji_listBox = new ListBox();
             label14 = new Label();
             SuspendLayout();
             // 
-            // listBox2
+            // listaRezerwacji_listBox
             // 
-            listBox2.BackColor = SystemColors.WindowFrame;
-            listBox2.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            listBox2.ForeColor = SystemColors.Menu;
-            listBox2.FormattingEnabled = true;
-            listBox2.Location = new Point(12, 70);
-            listBox2.Name = "listBox2";
-            listBox2.Size = new Size(802, 484);
-            listBox2.TabIndex = 15;
+            listaRezerwacji_listBox.BackColor = SystemColors.WindowFrame;
+            listaRezerwacji_listBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listaRezerwacji_listBox.ForeColor = SystemColors.Menu;
+            listaRezerwacji_listBox.FormattingEnabled = true;
+            listaRezerwacji_listBox.Location = new Point(12, 70);
+            listaRezerwacji_listBox.Name = "listaRezerwacji_listBox";
+            listaRezerwacji_listBox.Size = new Size(802, 466);
+            listaRezerwacji_listBox.TabIndex = 15;
             // 
             // label14
             // 
@@ -59,7 +59,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
-            Controls.Add(listBox2);
+            Controls.Add(listaRezerwacji_listBox);
             Controls.Add(label14);
             Name = "AllReservViewControl";
             Size = new Size(828, 564);
@@ -69,7 +69,7 @@
 
         #endregion
 
-        private ListBox listBox2;
+        private ListBox listaRezerwacji_listBox;
         private Label label14;
     }
 }
